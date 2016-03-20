@@ -24,8 +24,8 @@ cacheSolve <- function(x, ...) {
                 message("retrieving inverse")
                 return(y)
         }
-        data = x$get()
-        y = solve(data, ...)
+        z = x$get()
+        y = solve(z)
         x$setinv(y)
         y
 }
